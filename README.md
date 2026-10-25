@@ -6,7 +6,7 @@ Forecast of the **2026 Israeli Knesset election** (27 October 2026) from publish
 
 ## Method
 
-1. **Data** – 184 seat-projection polls, 26 Apr – 23 Oct 2026 (`data/israel_polls_2026.csv`).
+1. **Data** – 184 seat-projection polls, 26 Apr – 23 Oct 2026. Part 1 of the notebook scrapes them from the [MEF Poll of Polls](https://israelvote.meforum.org/polls/), adds the three final polls of 23 Oct by hand, and saves `data/israel_polls_2026.csv` (falls back to `data/israel_polls_2026_snapshot.csv` if the site can't be reached).
 2. **Seats → vote share.** Each poll is converted back to % of the vote: `share = seats / 120 × (100 − wasted)`, where *wasted* is the reported % of the parties below the threshold.
 3. **House effects.** Each pollster's systematic lean per party is estimated, shrunk toward zero, and removed.
 4. **Weekly averages** (Israeli week, Sun–Sat).
@@ -46,7 +46,7 @@ pip install -r requirements.txt
 jupyter notebook predict_elections_2026.ipynb
 ```
 
-Outputs (CSV tables and charts) are written to `outputs/`.
+Running the notebook re-scrapes the polls into `data/` and writes the result tables and charts to `outputs/`.
 
 ## Limitations
 

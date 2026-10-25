@@ -3,5 +3,7 @@ pandas
 scipy
 matplotlib
 packaging
+requests
+beautifulsoup4
 python-bidi    # only needed for matplotlib < 3.11 (Hebrew right-to-left text)
 jupyter
