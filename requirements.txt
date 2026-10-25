@@ -1,0 +1,7 @@
+numpy
+pandas
+scipy
+matplotlib
+packaging
+python-bidi    # only needed for matplotlib < 3.11 (Hebrew right-to-left text)
+jupyter

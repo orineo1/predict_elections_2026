@@ -1,0 +1,4 @@
+bloc,predicted_seats,median,lo80,hi80,p_61_plus
+Netanyahu bloc,53,52.0,47.0,56.0,0.009
+Opposition (Jewish parties),54,54.0,49.0,58.0,0.03
+Arab parties,13,13.0,11.0,15.0,0.0
